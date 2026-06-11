@@ -1,0 +1,17 @@
+{
+    "name": "com.xorin.brain",
+    "version": "0.1.1-beta",
+    "displayName": "Xorin - AI Co-Developer",
+    "description": "AI co-developer for Unity powered by Lysto.",
+    "unity": "6000.3",
+    "dependencies": {},
+    "keywords": [
+        "ai",
+        "llm",
+        "copilot",
+        "assistant"
+    ],
+    "author": {
+        "name": "Lysto"
+    }
+}

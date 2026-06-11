@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="eig-root-panel" class="eig-root-panel">
+
+        <ui:VisualElement name="eig-root-main" class="eig-root-main">
+
+            <ui:VisualElement name="header" class="header-bar">
+                <ui:VisualElement name="header-left" class="header-bar-side header-bar-side--left">
+                    <ui:Button text="+" name="new-chat-button" class="xorin-trigger new-chat-button"
+                        tooltip="New Chat" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="header-right" class="header-bar-side header-bar-side--right">
+                    <ui:VisualElement name="chat-title-container"
+                        class="xorin-trigger chat-title-container chat-title-container--history-mode">
+                        <ui:Label text="&#x23F0;" name="chat-title-history-icon" class="chat-title-history-icon"
+                            tooltip="Chat history" />
+                        <ui:Label text="New Chat" name="chat-title-label" class="chat-title-label" />
+                        <ui:Label text="&#x25BE;" name="chat-title-arrow" class="chat-title-arrow" />
+                    </ui:VisualElement>
+                    <ui:Button text="&#x2699;" name="gear-button" class="xorin-trigger gear-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="eig-search-row" class="eig-search-row" />
+
+            <ui:VisualElement name="eig-chat-content" class="eig-chat-content">
+                <ui:VisualElement name="chatPanelRoot" class="eig-chat-panel-root">
+                    <ui:ScrollView name="chat-scroll" mode="Vertical"
+                        style="flex-grow: 1; flex-shrink: 1; min-height: 0; background-color: #1a1a1a;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="emptyStateRoot" class="eig-empty-state-root" />
+                <ui:VisualElement name="progressElementContainer" class="eig-progress-container"
+                    picking-mode="Ignore" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="eig-footer" class="eig-footer">
+            <ui:VisualElement name="input-bar" class="eig-input-bar" style="width: 100%;">
+                <ui:VisualElement name="input-shell" class="input-shell"
+                    style="flex-grow: 1; flex-shrink: 1; width: 100%; min-width: 0; flex-direction: column;">
+                    <ui:VisualElement name="chat-input-body" class="chat-input-body">
+                        <ui:VisualElement name="composer-input-inline" class="composer-input-inline">
+                            <ui:VisualElement name="mention-chips-bar" class="mention-chips-bar" />
+                            <ui:TextField name="chat-input" multiline="true"
+                                style="flex-grow: 1; flex-shrink: 1; min-width: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="composer-row" class="composer-row"
+                        style="flex-direction: row; justify-content: space-between; align-items: center; align-self: stretch;">
+                        <ui:Button text="Agent &#x25BE;" name="mode-trigger"
+                            class="composer-text-button mode-trigger" />
+                        <ui:Button text="&#x2191;" name="send-button"
+                            class="composer-icon-button send-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="eig-drop-zone" class="eig-drop-zone" picking-mode="Ignore" />
+            <ui:VisualElement name="planPromptBannerRoot" class="eig-plan-banner-root" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="eig-history-root" class="eig-history-root" picking-mode="Ignore" />
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,133 @@
+/* ─── Markdown Container ─── */
+.md-container {
+    flex-grow: 1;
+}
+
+/* ─── Paragraphs ─── */
+.md-paragraph {
+    white-space: normal;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/* ─── Headers ─── */
+.md-h1 {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.md-h2 {
+    font-size: 17px;
+    -unity-font-style: bold;
+    color: white;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.md-h3 {
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* ─── Code Blocks ─── */
+.md-code-block {
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.md-code-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 2px 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+}
+
+.md-code-lang {
+    font-size: 11px;
+    color: #999;
+    -unity-font-style: italic;
+}
+
+.md-copy-button {
+    font-size: 10px;
+    color: #aaa;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 3px;
+    padding: 1px 6px;
+}
+
+.md-copy-button:hover {
+    color: white;
+    border-color: #888;
+    background-color: #3a3a3a;
+}
+
+.md-code-content {
+    white-space: pre-wrap;
+    font-size: 12px;
+    color: #d4d4d4;
+    padding: 8px;
+    -unity-font-style: normal;
+}
+
+/* ─── Blockquotes ─── */
+.md-blockquote {
+    border-left-width: 3px;
+    border-left-color: #555;
+    padding-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.md-blockquote-text {
+    white-space: normal;
+    font-size: 13px;
+    color: #bbb;
+    -unity-font-style: italic;
+}
+
+/* ─── Lists ─── */
+.md-list {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 16px;
+}
+
+.md-list-item {
+    white-space: normal;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+/* ─── Horizontal Rule ─── */
+.md-hr {
+    height: 1px;
+    background-color: #555;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* ─── Interrupted Indicator ─── */
+.interrupted-indicator {
+    color: #ff9900;
+    font-size: 12px;
+    -unity-font-style: italic;
+    margin-top: 4px;
+}
