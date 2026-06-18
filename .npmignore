@@ -1,0 +1,13 @@
+# Unity temp folders (shouldn't be present, but just in case)
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# OS junk
+.DS_Store
+Thumbs.db
