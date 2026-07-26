@@ -1,0 +1,23 @@
+{
+    "name": "Xorin.Editor.InputSystem",
+    "rootNamespace": "Xorin.Editor.InputSystem",
+    "references": [
+        "Xorin.Editor",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "defineConstraints": ["XORIN_INPUT_SYSTEM", "ENABLE_INPUT_SYSTEM"],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "XORIN_INPUT_SYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,132 +1,216 @@
-/* ─── Markdown Container ─── */
+/* Phase 61: assistant Markdown blocks */
+.message-markdown-host,
 .md-container {
+    flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
-/* ─── Paragraphs ─── */
 .md-paragraph {
     white-space: normal;
-    color: white;
+    color: #d0d0d0;
     font-size: 13px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    flex-shrink: 1;
 }
 
-/* ─── Headers ─── */
-.md-h1 {
-    font-size: 20px;
-    -unity-font-style: bold;
-    color: white;
+.md-header {
+    color: #f0f0f0;
+    white-space: normal;
     margin-top: 8px;
+    margin-bottom: 4px;
+    -unity-font-style: bold;
+}
+
+.md-header-1 {
+    font-size: 18px;
+    padding-bottom: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: #555555;
+    margin-bottom: 8px;
+}
+
+.md-header-2 {
+    font-size: 16px;
     margin-bottom: 6px;
 }
 
-.md-h2 {
-    font-size: 17px;
-    -unity-font-style: bold;
-    color: white;
-    margin-top: 6px;
-    margin-bottom: 4px;
+.md-header-3 {
+    font-size: 14px;
+    color: #dedede;
 }
 
-.md-h3 {
-    font-size: 15px;
-    -unity-font-style: bold;
-    color: white;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-/* ─── Code Blocks ─── */
 .md-code-block {
     background-color: #1e1e1e;
-    border-radius: 4px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 7px;
     overflow: hidden;
+    flex-shrink: 1;
 }
 
 .md-code-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #2d2d2d;
-    padding: 2px 8px;
+    background-color: #292929;
     border-bottom-width: 1px;
-    border-bottom-color: #444;
+    border-bottom-color: #444444;
+    padding: 3px 5px 3px 10px;
 }
 
-.md-code-lang {
+.md-code-language {
     font-size: 11px;
-    color: #999;
-    -unity-font-style: italic;
+    color: #999999;
+    -unity-font-style: bold;
+    letter-spacing: 0.4px;
 }
 
-.md-copy-button {
+.md-code-copy-button {
     font-size: 10px;
-    color: #aaa;
+    color: #b5b5b5;
     background-color: transparent;
     border-width: 1px;
-    border-color: #555;
+    border-color: transparent;
     border-radius: 3px;
-    padding: 1px 6px;
+    padding: 2px 7px;
+    min-width: 46px;
 }
 
-.md-copy-button:hover {
+.md-code-copy-button:hover {
     color: white;
-    border-color: #888;
-    background-color: #3a3a3a;
+    border-color: #666666;
+    background-color: #383838;
 }
 
 .md-code-content {
-    white-space: pre-wrap;
     font-size: 12px;
     color: #d4d4d4;
-    padding: 8px;
-    -unity-font-style: normal;
+    padding: 10px;
+    white-space: normal;
+    flex-shrink: 1;
 }
 
-/* ─── Blockquotes ─── */
 .md-blockquote {
     border-left-width: 3px;
-    border-left-color: #555;
-    padding-left: 8px;
+    border-left-color: #7c84f8;
+    padding-left: 11px;
     margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 4px;
+    margin-bottom: 6px;
+    margin-left: 3px;
 }
 
 .md-blockquote-text {
-    white-space: normal;
     font-size: 13px;
-    color: #bbb;
+    color: #b2b2b2;
+    white-space: normal;
     -unity-font-style: italic;
 }
 
-/* ─── Lists ─── */
 .md-list {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    flex-shrink: 1;
 }
 
 .md-list-item {
-    white-space: normal;
-    color: white;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 3px;
+    min-width: 0;
+}
+
+.md-list-marker {
+    width: 18px;
+    min-width: 18px;
     font-size: 13px;
-    margin-bottom: 2px;
+    color: #a2a2a2;
+    -unity-text-align: upper-center;
+    flex-shrink: 0;
 }
 
-/* ─── Horizontal Rule ─── */
-.md-hr {
+.md-list-number {
+    width: 24px;
+    min-width: 24px;
+    -unity-text-align: upper-right;
+    margin-right: 4px;
+}
+
+.md-list-text {
+    font-size: 13px;
+    color: #d0d0d0;
+    white-space: normal;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.md-horizontal-rule {
     height: 1px;
-    background-color: #555;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    background-color: #555555;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
-/* ─── Interrupted Indicator ─── */
+.md-table {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.md-table-header-row {
+    flex-direction: row;
+    background-color: #292929;
+    border-bottom-width: 1px;
+    border-bottom-color: #4a4a4a;
+    min-width: 0;
+}
+
+.md-table-row {
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: #424242;
+    min-width: 0;
+}
+
+.md-table-header-cell {
+    font-size: 12px;
+    color: #e0e0e0;
+    -unity-font-style: bold;
+    padding: 5px 7px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    border-right-width: 1px;
+    border-right-color: #4a4a4a;
+    white-space: normal;
+}
+
+.md-table-cell {
+    font-size: 12px;
+    color: #c4c4c4;
+    padding: 5px 7px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    border-right-width: 1px;
+    border-right-color: #424242;
+    white-space: normal;
+}
+
 .interrupted-indicator {
-    color: #ff9900;
+    color: #ffb04a;
     font-size: 12px;
     -unity-font-style: italic;
     margin-top: 4px;

@@ -6,23 +6,34 @@
 
             <ui:VisualElement name="header" class="header-bar">
                 <ui:VisualElement name="header-left" class="header-bar-side header-bar-side--left">
-                    <ui:Button text="+" name="new-chat-button" class="xorin-trigger new-chat-button"
-                        tooltip="New Chat" />
+                    <ui:Button text="" name="new-chat-button"
+                        class="xorin-trigger xorin-icon-button new-chat-button"
+                        tooltip="New chat" />
+                    <ui:VisualElement name="chat-title-container"
+                        class="xorin-trigger chat-title-container chat-title-container--history-mode">
+                        <ui:Label text="" name="chat-title-history-icon" class="chat-title-history-icon"
+                            tooltip="Chat history" />
+                        <ui:Label text="New Chat" name="chat-title-label"
+                            class="xorin-secondary-text chat-title-label" />
+                        <ui:Label text="&#x25BE;" name="chat-title-arrow"
+                            class="xorin-caption chat-title-arrow" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
 
                 <ui:VisualElement name="header-right" class="header-bar-side header-bar-side--right">
-                    <ui:VisualElement name="chat-title-container"
-                        class="xorin-trigger chat-title-container chat-title-container--history-mode">
-                        <ui:Label text="&#x23F0;" name="chat-title-history-icon" class="chat-title-history-icon"
-                            tooltip="Chat history" />
-                        <ui:Label text="New Chat" name="chat-title-label" class="chat-title-label" />
-                        <ui:Label text="&#x25BE;" name="chat-title-arrow" class="chat-title-arrow" />
-                    </ui:VisualElement>
-                    <ui:Button text="&#x2699;" name="gear-button" class="xorin-trigger gear-button" />
+                    <ui:Button text="" name="performance-analysis-button"
+                        class="xorin-trigger xorin-icon-button performance-analysis-button"
+                        tooltip="Run performance analysis" />
+                    <ui:Button text="" name="memory-button"
+                        class="xorin-trigger xorin-icon-button memory-button" tooltip="Memory" />
+                    <ui:Button text="" name="gear-button"
+                        class="xorin-trigger xorin-icon-button gear-button" tooltip="Settings" />
                 </ui:VisualElement>
             </ui:VisualElement>
 
             <ui:VisualElement name="eig-search-row" class="eig-search-row" />
+            <ui:VisualElement name="performance-status-root"
+                class="runtime-performance-status-root" />
 
             <ui:VisualElement name="eig-chat-content" class="eig-chat-content">
                 <ui:VisualElement name="chatPanelRoot" class="eig-chat-panel-root">
@@ -34,6 +45,9 @@
                     picking-mode="Ignore" />
             </ui:VisualElement>
 
+            <!-- Chat history overlay: slides in from right over chat content -->
+            <ui:VisualElement name="right-panel" class="right-panel" />
+
         </ui:VisualElement>
 
         <ui:VisualElement name="eig-footer" class="eig-footer">
@@ -44,15 +58,18 @@
                         <ui:VisualElement name="composer-input-inline" class="composer-input-inline">
                             <ui:VisualElement name="mention-chips-bar" class="mention-chips-bar" />
                             <ui:TextField name="chat-input" multiline="true"
+                                class="xorin-primary-content"
                                 style="flex-grow: 1; flex-shrink: 1; min-width: 0;" />
                         </ui:VisualElement>
                     </ui:VisualElement>
                     <ui:VisualElement name="composer-row" class="composer-row"
-                        style="flex-direction: row; justify-content: space-between; align-items: center; align-self: stretch;">
+                        style="flex-direction: row; justify-content: flex-start; align-items: center; align-self: stretch;">
                         <ui:Button text="Agent &#x25BE;" name="mode-trigger"
-                            class="composer-text-button mode-trigger" />
-                        <ui:Button text="&#x2191;" name="send-button"
-                            class="composer-icon-button send-button" />
+                            class="composer-text-button xorin-standard-control mode-trigger" />
+                        <ui:VisualElement name="composer-row-right" class="composer-row-right">
+                            <ui:Button text="" name="send-button"
+                                class="composer-icon-button xorin-icon-button send-button" />
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
