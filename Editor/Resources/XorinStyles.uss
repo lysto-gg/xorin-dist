@@ -117,6 +117,21 @@ Button:disabled > .xorin-action-icon {
     height: 28px;
 }
 
+.xorin-info-dialog-root {
+    padding: 16px 20px;
+    justify-content: center;
+}
+
+.xorin-info-dialog-message {
+    flex-grow: 1;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.xorin-info-dialog-button {
+    height: 28px;
+}
+
 .eig-main-column {
     flex-grow: 1;
     flex-shrink: 1;
