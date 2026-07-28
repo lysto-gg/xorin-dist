@@ -671,6 +671,16 @@ Button:disabled > .xorin-action-icon {
     min-width: 0;
 }
 
+.chat-input-placeholder {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 6px;
+    color: #808080;
+    -unity-font-style: italic;
+    white-space: normal;
+}
+
 #chat-input {
     background-color: transparent;
     border-width: 0;
@@ -711,11 +721,6 @@ Button:disabled > .xorin-action-icon {
     overflow: hidden;
     white-space: normal;
     padding-right: 4px;
-}
-
-#chat-input .unity-base-text-field__input--placeholder {
-    color: #808080;
-    -unity-font-style: italic;
 }
 
 #chat-input .unity-scroller--vertical {

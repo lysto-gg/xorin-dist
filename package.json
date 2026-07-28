@@ -1,10 +1,12 @@
 {
     "name": "com.xorin.brain",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "displayName": "Xorin - AI Co-Developer",
     "description": "AI co-developer for Unity powered by Lysto.",
-    "unity": "6000.3",
-    "dependencies": {},
+    "unity": "2022.3",
+    "dependencies": {
+        "com.unity.ugui": "1.0.0"
+    },
     "keywords": [
         "ai",
         "llm",

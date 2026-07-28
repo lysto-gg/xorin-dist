@@ -88,11 +88,15 @@
 }
 
 .md-code-content {
+    padding: 10px;
+    flex-shrink: 1;
+}
+
+.md-code-line {
     font-size: 12px;
     color: #d4d4d4;
-    padding: 10px;
-    white-space: normal;
-    flex-shrink: 1;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .md-blockquote {
