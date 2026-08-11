@@ -1,11 +1,12 @@
 {
     "name": "com.xorin.brain",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "displayName": "Xorin - AI Co-Developer",
     "description": "AI co-developer for Unity powered by Lysto.",
     "unity": "2022.3",
     "dependencies": {
-        "com.unity.ugui": "1.0.0"
+        "com.unity.ugui": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
     },
     "keywords": [
         "ai",
