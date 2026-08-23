@@ -9,14 +9,12 @@
                     <ui:Button text="" name="new-chat-button"
                         class="xorin-trigger xorin-icon-button new-chat-button"
                         tooltip="New chat" />
-                    <ui:VisualElement name="chat-title-container"
-                        class="xorin-trigger chat-title-container chat-title-container--history-mode">
-                        <ui:Label text="" name="chat-title-history-icon" class="chat-title-history-icon"
+                    <ui:VisualElement name="chat-title-container" class="chat-title-container">
+                        <ui:Button text="" name="chat-history-button"
+                            class="xorin-trigger xorin-icon-button chat-history-button"
                             tooltip="Chat history" />
                         <ui:Label text="New Chat" name="chat-title-label"
                             class="xorin-secondary-text chat-title-label" />
-                        <ui:Label text="&#x25BE;" name="chat-title-arrow"
-                            class="xorin-caption chat-title-arrow" />
                     </ui:VisualElement>
                 </ui:VisualElement>
 
@@ -63,9 +61,11 @@
                         </ui:VisualElement>
                     </ui:VisualElement>
                     <ui:VisualElement name="composer-row" class="composer-row"
-                        style="flex-direction: row; justify-content: flex-start; align-items: center; align-self: stretch;">
-                        <ui:Button text="Agent &#x25BE;" name="mode-trigger"
-                            class="composer-text-button xorin-standard-control mode-trigger" />
+                        style="justify-content: flex-start; align-items: center; align-self: stretch;">
+                        <ui:VisualElement name="composer-row-left" class="composer-row-left">
+                            <ui:Button text="Agent &#x25BE;" name="mode-trigger"
+                                class="composer-text-button xorin-standard-control mode-trigger" />
+                        </ui:VisualElement>
                         <ui:VisualElement name="composer-row-right" class="composer-row-right">
                             <ui:Button text="" name="send-button"
                                 class="composer-icon-button xorin-icon-button send-button" />

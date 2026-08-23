@@ -1,0 +1,31 @@
+{
+    "name": "Xorin.Editor.Addressables",
+    "rootNamespace": "Xorin.Editor.AddressablesAdapter",
+    "references": [
+        "Unity.Addressables",
+        "Unity.Addressables.Editor",
+        "Unity.ResourceManager"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll",
+        "Xorin.Editor.dll"
+    ],
+    "defineConstraints": [
+        "XORIN_ADDRESSABLES"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.addressables",
+            "expression": "1.19.0",
+            "define": "XORIN_ADDRESSABLES"
+        }
+    ],
+    "noEngineReferences": false
+}

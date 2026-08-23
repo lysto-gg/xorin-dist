@@ -71,20 +71,7 @@
 }
 
 .md-code-copy-button {
-    font-size: 10px;
-    color: #b5b5b5;
-    background-color: transparent;
-    border-width: 1px;
-    border-color: transparent;
-    border-radius: 3px;
-    padding: 2px 7px;
     min-width: 46px;
-}
-
-.md-code-copy-button:hover {
-    color: white;
-    border-color: #666666;
-    background-color: #383838;
 }
 
 .md-code-content {
