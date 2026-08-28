@@ -280,11 +280,231 @@ Button:disabled > .xorin-action-icon {
     height: 28px;
 }
 
-.eig-main-column {
+/* ─── Task report dialog ─── */
+.xorin-task-report-root {
     flex-grow: 1;
-    flex-shrink: 1;
-    flex-direction: column;
     min-height: 0;
+    background-color: #242424;
+}
+
+.xorin-task-report-scroll {
+    flex-grow: 1;
+}
+
+.xorin-task-report-scroll-content {
+    padding: 16px 18px;
+}
+
+.xorin-task-report-form,
+.xorin-task-report-success {
+    flex-direction: column;
+}
+
+.xorin-task-report-root .unity-base-field__input,
+.xorin-task-report-root Button {
+    font-size: 12px;
+}
+
+.xorin-task-report-title {
+    margin-bottom: 10px;
+    color: #e6e6e6;
+}
+
+.xorin-task-report-summary {
+    min-height: 28px;
+    margin-bottom: 16px;
+    padding: 6px 8px;
+    background-color: #303030;
+    border-width: 1px;
+    border-color: #444;
+    border-radius: 4px;
+    color: #b8b8b8;
+    white-space: normal;
+    -unity-text-align: middle-left;
+}
+
+.xorin-task-report-field-label {
+    margin-bottom: 5px;
+    color: #d8d8d8;
+}
+
+.xorin-task-report-dropdown {
+    min-height: 28px;
+    margin: 0 0 14px 0;
+}
+
+.xorin-task-report-dropdown > .unity-base-field__input {
+    background-color: #303030;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 4px;
+    color: #dedede;
+}
+
+.xorin-task-report-description {
+    height: 120px;
+    margin: 0;
+}
+
+.xorin-task-report-description > .unity-text-field__input {
+    padding: 6px 8px;
+    background-color: #1e1e1e;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 4px;
+    color: #dedede;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+.xorin-task-report-count {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    color: #8f8f8f;
+    -unity-text-align: middle-right;
+}
+
+.xorin-task-report-count--invalid {
+    color: rgba(238, 110, 110, 1);
+}
+
+.xorin-task-report-screenshot-actions {
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.xorin-task-report-screenshot-actions > Button {
+    flex-grow: 1;
+    margin-left: 4px;
+}
+
+.xorin-task-report-screenshot-actions > .xorin-task-report-screenshot-action--first {
+    margin-left: 0;
+}
+
+.xorin-task-report-screenshot-preview {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #1e1e1e;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 4px;
+}
+
+.xorin-task-report-screenshot-image {
+    height: 180px;
+    margin-bottom: 7px;
+}
+
+.xorin-task-report-screenshot-details {
+    margin-bottom: 6px;
+    color: #a8a8a8;
+    white-space: normal;
+}
+
+.xorin-task-report-remove-screenshot {
+    align-self: flex-start;
+}
+
+.xorin-task-report-toggle {
+    min-height: 26px;
+    margin: 0 0 8px 0;
+}
+
+.xorin-task-report-toggle > .unity-toggle__input > .unity-toggle__text,
+.xorin-task-report-toggle .unity-toggle__text,
+.xorin-task-report-toggle .unity-label {
+    font-size: 12px;
+    color: #d0d0d0;
+    white-space: normal;
+}
+
+.xorin-task-report-toggle > .unity-toggle__input {
+    flex-grow: 1;
+}
+
+.xorin-task-report-notice {
+    margin-bottom: 7px;
+    padding: 8px 10px;
+    background-color: #2e2e2e;
+    border-left-width: 3px;
+    border-radius: 3px;
+}
+
+.xorin-task-report-notice-text {
+    color: #bdbdbd;
+    white-space: normal;
+}
+
+.xorin-task-report-notice--info {
+    border-left-color: rgba(105, 150, 210, 0.9);
+}
+
+.xorin-task-report-notice--warning {
+    background-color: rgba(104, 78, 26, 0.24);
+    border-left-color: rgba(230, 174, 52, 0.95);
+}
+
+.xorin-task-report-notice--error {
+    background-color: rgba(112, 42, 42, 0.26);
+    border-left-color: rgba(224, 88, 88, 0.95);
+}
+
+.xorin-task-report-sign-in {
+    align-self: flex-start;
+    margin: 1px 0 7px 0;
+}
+
+.xorin-task-report-metadata {
+    margin: 1px 2px 5px 2px;
+    color: #929292;
+    white-space: normal;
+}
+
+.xorin-task-report-actions {
+    flex-direction: row;
+    margin-top: 9px;
+}
+
+.xorin-task-report-actions > Button {
+    flex-grow: 1;
+    margin-left: 4px;
+}
+
+.xorin-task-report-actions > .xorin-task-report-action--first {
+    margin-left: 0;
+}
+
+.xorin-task-report-success-message {
+    min-height: 44px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(48, 92, 62, 0.32);
+    border-left-width: 3px;
+    border-left-color: rgba(92, 190, 118, 0.95);
+    border-radius: 3px;
+    color: #d6e9da;
+    white-space: normal;
+}
+
+.xorin-task-report-id-label {
+    margin-bottom: 4px;
+    color: #969696;
+}
+
+.xorin-task-report-id {
+    height: 30px;
+    margin: 0;
+}
+
+.xorin-task-report-id > .unity-text-field__input {
+    padding: 5px 8px;
+    background-color: #1e1e1e;
+    border-width: 1px;
+    border-color: #4a4a4a;
+    border-radius: 4px;
+    color: #e2e2e2;
+    -unity-font-style: bold;
 }
 
 .eig-root-main {
@@ -612,6 +832,10 @@ Button:disabled > .xorin-action-icon {
     padding-right: 34px;
 }
 
+.message-user--has-reuse {
+    padding-right: 60px;
+}
+
 .message-assistant {
     background-color: rgba(64, 64, 64, 0.9);
     padding-right: 34px;
@@ -621,15 +845,25 @@ Button:disabled > .xorin-action-icon {
     background-color: rgba(153, 26, 26, 0.9);
 }
 
-.message-status {
-    align-self: center;
-    background-color: rgba(76, 76, 76, 0.7);
-    padding: 4px 8px;
+.message-error-action {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 3px 10px;
+    min-height: 24px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.32);
+    border-radius: 4px;
 }
 
-.message-copy-button {
+.message-error-action:hover,
+.message-error-action:focus {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.message-action-button {
     position: absolute;
-    right: 6px;
     bottom: 6px;
     width: 22px;
     min-width: 22px;
@@ -646,18 +880,26 @@ Button:disabled > .xorin-action-icon {
     transition-duration: 0.12s;
 }
 
+.message-copy-button {
+    right: 6px;
+}
+
 .message-copy-button--top {
     bottom: auto;
     top: 6px;
 }
 
-.message-copy-button:hover,
-.message-copy-button:focus {
+.message-reuse-button {
+    right: 32px;
+}
+
+.message-action-button:hover,
+.message-action-button:focus {
     background-color: rgba(168, 199, 250, 0.15);
     opacity: 1;
 }
 
-.message-copy-button > .xorin-action-icon {
+.message-action-button > .xorin-action-icon {
     opacity: 1;
 }
 
@@ -1191,12 +1433,6 @@ Button:disabled > .xorin-action-icon {
     color: #ff9900;
     -unity-font-style: italic;
     margin-top: 4px;
-}
-
-/* ─── Status Bubble ─── */
-.message-status {
-    align-self: center;
-    background-color: rgba(48, 48, 48, 0.7);
 }
 
 /* ─── Scrollbar ─── */
@@ -2253,10 +2489,6 @@ Button:disabled > .xorin-action-icon {
     min-width: 0;
 }
 
-.changelog-stats {
-    color: rgba(140, 180, 140, 1);
-}
-
 /* ── Phase 41l: Attach button + Attachment bar ── */
 
 .attach-button {
@@ -3180,12 +3412,31 @@ Button:disabled > .xorin-action-icon {
     flex-shrink: 0;
 }
 
+.assistant-turn-report {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    min-width: 48px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 4px;
+    flex-shrink: 0;
+}
+
 .assistant-turn-copy:disabled {
     opacity: 0;
 }
 
 .assistant-turn:hover > .assistant-turn-header > .assistant-turn-copy,
-.message-user:hover > .message-copy-button {
+.assistant-turn:hover > .assistant-turn-header > .assistant-turn-report,
+.message-user:hover > .message-action-button {
+    opacity: 1;
+}
+
+.message-user > .message-action-button:disabled {
     opacity: 1;
 }
 
