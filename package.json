@@ -1,6 +1,6 @@
 {
   "name": "com.xorin.brain",
-  "version": "2.1.1",
+  "version": "2.1.0",
   "displayName": "Xorin - AI Co-Developer",
   "description": "AI co-developer for Unity powered by Lysto.",
   "unity": "2022.3",
