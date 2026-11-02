@@ -2,21 +2,32 @@
     "name": "Xorin.Editor.InputSystem",
     "rootNamespace": "Xorin.Editor.InputSystem",
     "references": [
-        "Xorin.Editor",
         "Unity.InputSystem"
     ],
-    "includePlatforms": ["Editor"],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "autoReferenced": true,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "defineConstraints": ["XORIN_INPUT_SYSTEM", "ENABLE_INPUT_SYSTEM"],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Xorin.Editor.dll"
+    ],
+    "defineConstraints": [
+        "XORIN_INPUT_SYSTEM",
+        "ENABLE_INPUT_SYSTEM"
+    ],
     "versionDefines": [
         {
             "name": "com.unity.inputsystem",
             "expression": "1.0.0",
             "define": "XORIN_INPUT_SYSTEM"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.8.0",
+            "define": "XORIN_INPUT_SYSTEM_PROJECT_ACTIONS"
         }
     ],
     "noEngineReferences": false

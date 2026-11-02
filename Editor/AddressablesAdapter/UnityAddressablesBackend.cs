@@ -16,6 +16,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 using Xorin.Editor.Addressables;
+using Xorin.Editor.Compat;
 using RuntimeAddressables = UnityEngine.AddressableAssets.Addressables;
 
 namespace Xorin.Editor.AddressablesAdapter
@@ -1217,7 +1218,7 @@ namespace Xorin.Editor.AddressablesAdapter
             List<AddressablesValidationFinding> findings)
         {
             int checkedCount = 0;
-            var scannedObjects = new HashSet<int>();
+            var scannedObjects = new HashSet<long>();
             var openScenePaths = new HashSet<string>(StringComparer.Ordinal);
             var prefabStage = PrefabStageUtility.GetCurrentPrefabStage();
             if (prefabStage != null && prefabStage.prefabContentsRoot != null)
@@ -1287,10 +1288,10 @@ namespace Xorin.Editor.AddressablesAdapter
             AddressableAssetSettings settings,
             UnityEngine.Object owner,
             string ownerPath,
-            HashSet<int> scannedObjects,
+            HashSet<long> scannedObjects,
             List<AddressablesValidationFinding> findings)
         {
-            if (owner == null || !scannedObjects.Add(owner.GetInstanceID())) return 0;
+            if (owner == null || !scannedObjects.Add(UnityObjectCompat.RawKey(owner))) return 0;
             int checkedCount = 0;
             for (Type type = owner.GetType(); type != null; type = type.BaseType)
             {

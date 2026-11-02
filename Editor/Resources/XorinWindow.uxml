@@ -43,7 +43,7 @@
                     picking-mode="Ignore" />
             </ui:VisualElement>
 
-            <!-- Chat history overlay: slides in from right over chat content -->
+            <!-- Chat history, settings, and memory overlay on the current workspace. -->
             <ui:VisualElement name="right-panel" class="right-panel" />
 
         </ui:VisualElement>
